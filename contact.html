@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap.css for quicker styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Original css file for styling -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awsome css for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"> 
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Branding -->
+        <span class="navbar-brand mb-0 h1">
+            <h2>Elwin Ung</h2>
+        </span>
+        <!-- Collapsable menu when window reduced to a certain width -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links in Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Individual link in navbar as an unordered list -->
+            <ul class="navbar-nav ml-auto"> <!-- ml-auto: To make all links stick to right side-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutMe.html">
+                        <h4>About me</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">
+                        <h4>Portfolio</h4>
+                    </a>
+                </li>
+                <li class="nav-item active"> <!-- active: To make this link light up as user is on this page-->
+                    <a class="nav-link disabled" href="contact.html"> <!-- disabled: To make this link un-clickable -->
+                        <h4>Contact me</h4><span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main>
+        <div class="container">
+            <br>
+            <!-- Jumbotron -->
+            <section class="jumbotron">
+                <h1 class="display-5">Contact</h1>
+                <p class="lead">Please allow up to 2-4 days for me to reply.</p>
+                <hr class="my-4" style="border-top: 2px solid">
+                <!-- Ways for contacting as icons -->
+                <a href="https://www.linkedin.com/in/elwin-ung/" target="blank"><i class="fab fa-linkedin fa-4x"></i></a>
+                <a href="mailto:elwin.ung@gmail.com" style="color: rgb(112, 111, 111); margin-left: 2%"><i class="fas fa-envelope fa-4x"></i></a>
+                <br><br>
+                <hr style="border-top: 3px solid">
+                <p class="lead">OR you can leave me a message here.</p>
+                <!-- Form for leaving a message -->
+                <form>
+                    <!-- Individual input row -->
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input class="form-control" id="contactName" placeholder="Name">
+                      </div>
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMsg">Message</label>
+                        <textarea class="form-control" id="inputMsg" rows="3" placeholder="Your message here..."></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </form>
+            </section>
+        </div>
+    </main>
+
+    <br>
+
+    <!-- Copyright footer-->
+    <footer>
+        <!-- align-middle: Bootstrap class for aligning text in the middle of space -->
+        <span class="align-middle">Copyright © 2020 Elwin Ung. All Rights Reserved.</span>
+    </footer>
+</body>
+</html>

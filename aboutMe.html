@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap.css for quicker styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Original css file for styling -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awsome css for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Branding -->
+        <span class="navbar-brand mb-0 h1">
+            <h2>Elwin Ung</h2>
+        </span>
+        <!-- Collapsable menu when window reduced to a certain width -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links in Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Individual link in navbar as an unordered list -->
+            <ul class="navbar-nav ml-auto"> <!-- ml-auto: To make all links stick to right side-->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link disabled" href="aboutMe.html">
+                        <h4>About me</h4><span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">
+                        <h4>Portfolio</h4>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <h4>Contact me</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br class="BR">
+
+    <!-- Content -->
+    <main>
+        <div class="container">
+            <!-- Jumbotron -->
+            <section class="jumbotron">
+                <h1 class="display-5">About Me...</h1>
+                <hr class="my-4" style="border-top: 2px solid">
+                <div class="row single-post no-gutters"> <!-- To make text wrap under image -->
+                    <div class="col">
+                        <figure class="image-wrapper float-left pr-3">
+                            <img src="http://placehold.it/200x250" alt="Picture of me" />
+                        </figure>
+                        <article class="single-post-content-wrapper pr-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non enim provident quam sequi magnam laborum, iste illum ut atque velit placeat distinctio hic, deleniti sapiente maiores dolorum porro natus accusantium!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, dolor at vel maxime ea obcaecati non nesciunt minus odit temporibus rerum est ducimus deserunt? Ut error in nobis obcaecati labore.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eum voluptatibus est alias vero amet quam ipsa asperiores nesciunt voluptatem recusandae, corrupti hic, enim commodi molestiae voluptas quisquam. Vel, ea.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, iste. Qui et, fugiat laboriosam in eum autem facere corporis, ipsam ad impedit repudiandae? Sapiente dolores recusandae, autem quasi minima eaque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reprehenderit modi iure eligendi laudantium, omnis saepe similique ex odio officiis sit iusto explicabo voluptate voluptatibus necessitatibus facere quo vero dolorem.
+                        </article>
+                    </div>
+                </div>
+                <br>
+                <article class="row pl-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, exercitationem atque. Quaerat, cumque quos, ipsa, quidem ea cum cupiditate iste tempora at vel nam dolor quam esse mollitia sapiente vitae!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur hic corrupti ut quidem, mollitia deleniti. Consequatur assumenda ipsum cumque pariatur veritatis, eius voluptas rerum quae laudantium unde totam non iure.
+                </article>
+                <br>
+                <p style="float: right; margin-right: 4%">Check out my other profiles!</p>
+                <section id="bioIcons">
+                    <a href="https://github.com/ElwinUng0120?tab=repositories" target="blank" style="color: black"><i class="fab fa-github-square fa-4x"></i></a>
+                    <a href="https://www.linkedin.com/in/elwin-ung/" target="blank" style="margin-left: 10%"><i class="fab fa-linkedin fa-4x"></i></a>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <br>
+
+    <!-- Copyright footer-->
+    <footer>
+        <!-- align-middle: Bootstrap class for aligning text in the middle of space -->
+        <span class="align-middle">Copyright © 2020 Elwin Ung. All Rights Reserved.</span>
+    </footer>
+</body>
+</html>
