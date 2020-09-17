@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Elwin Ung's Full-stack Journal</title>
-    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- Bootstrap.css for quicker styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Original css file for styling -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Font Awsome css for icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <!-- Animate.css for website animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css">   
 </head>
 
 <body>
@@ -55,11 +53,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center" style="color:white;">
-                        <section class="wow fadeInDown">
-                            <h1 class="text-uppercase font-weight-bold pt-md-5 pt-5" style="font-size: 100px; margin-top: 15%">
-                                <strong>Welcome</strong>
-                            </h1>
-                        </section>
+                        <h1 class="text-uppercase font-weight-bold pt-md-5 pt-5 wow fadeInDown" style="font-size: 100px; margin-top: 15%">
+                            <strong>Welcome</strong>
+                        </h1>
                         <h4 class="h4-reponsive text-uppercase font-weige-bold">
                             <strong>This is my journal on learning Full-stack development</strong>
                         </h4>
@@ -83,5 +79,14 @@
         <!-- align-middle: Bootstrap class for aligning text in the middle of space -->
         <span class="align-middle">Copyright © 2020 Elwin Ung. All Rights Reserved.</span>
     </footer>
+
+    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- wow.js for easier animation with animate.css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script> 
 </body>
 </html>
