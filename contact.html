@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Bootstrap.css for quicker styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Original css file for styling -->
@@ -69,22 +66,22 @@
                 <br><br>
                 <hr style="border-top: 3px solid">
                 <p class="lead">OR you can leave me a message here.</p>
-                <!-- Form for leaving a message -->
-                <form>
+                <!-- Form for leaving a message. Made use of Formspree-->
+                <form action="https://formspree.io/mbjpjrly" method="POST">
                     <!-- Individual input row -->
                     <div class="form-group">
                         <label for="contactName">Name</label>
-                        <input class="form-control" id="contactName" placeholder="Name">
+                        <input type="text" name="name" class="form-control" id="contactName" placeholder="Name">
                       </div>
                     <div class="form-group">
                       <label for="inputEmail">Email</label>
-                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>
+                      <input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                         <label for="inputMsg">Message</label>
-                        <textarea class="form-control" id="inputMsg" rows="3" placeholder="Your message here..."></textarea>
+                        <textarea type="text" name="message" class="form-control" id="inputMsg" rows="3" placeholder="Your message here..."></textarea>
                       </div>
-                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-lg" value="Send">Submit</button>
                   </form>
             </section>
         </div>
@@ -97,5 +94,9 @@
         <!-- align-middle: Bootstrap class for aligning text in the middle of space -->
         <span class="align-middle">Copyright © 2020 Elwin Ung. All Rights Reserved.</span>
     </footer>
+        
+    <!-- jQuery.js and Bootstrap.js to make collapsed menu work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
