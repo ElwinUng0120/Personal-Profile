@@ -49,6 +49,7 @@ footer{
     margin-left: 80.5%;
 }
 
+/* Remove wow animation when collapsed menu is active */
 @media screen and (max-width: 991px){
     .nav-item{
         animation-name: none !important;
