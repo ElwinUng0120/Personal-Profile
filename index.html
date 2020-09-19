@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css">   
 </head>
 
-<body>
+<body id="body">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <span class="navbar-brand mb-0 h1 wow fadeIn" data-wow-delay="1.5s">
             <h2>Elwin Ung</h2>
@@ -87,6 +87,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#body').show();
+        });
     </script>
 </body>
 </html>
