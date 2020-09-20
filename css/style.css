@@ -49,13 +49,21 @@ footer{
     margin-left: 80.5%;
 }
 
+/* Image zoom on mouse hover */
+.hoverZoom{
+    transition: transform .2s;
+}
+
+.hoverZoom:hover{
+    transform: scale(1.2);
+}
+
 /* Remove wow animation when collapsed menu is active */
 @media screen and (max-width: 991px){
     .nav-item{
         animation-name: none !important;
         visibility: visible;
     }
-
 }
 
 /* Media queries when max-width = 768px */
@@ -67,6 +75,11 @@ footer{
     /* Positioning Icons in About Me */
     #bioIcons{
         margin-left: 70%;
+    }
+
+    /* Disable zoom on mobile/small screen */
+    .hoverZoom:hover{
+        transform: none;
     }
 }
 
@@ -85,6 +98,11 @@ footer{
     /* Positioning Icons in About Me */
     #bioIcons{
         margin-left: 47%;
+    }
+
+    /* Disable zoom on mobile/small screen */
+    .hoverZoom:hover{
+        transform: none;
     }
 
 }
