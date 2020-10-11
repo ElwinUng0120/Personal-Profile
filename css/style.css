@@ -51,11 +51,27 @@ footer{
 
 /* Image zoom on mouse hover */
 .hoverZoom{
+    border-style: solid;
+    border-width: 1px;
     transition: transform .2s;
+    height: 300px;
+    width: 500px;
+    z-index: -1;
 }
 
 .hoverZoom:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
 }
 
 /* Remove wow animation when collapsed menu is active */
