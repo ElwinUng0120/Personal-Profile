@@ -56,7 +56,6 @@ footer{
     transition: transform .2s;
     height: 300px;
     width: 500px;
-    z-index: -1;
 }
 
 .hoverZoom:hover{
@@ -72,6 +71,15 @@ footer{
     background-color: rgba(0,0,0,0.5);
     z-index: 10;
     display: none;
+}
+
+.details{
+    position: absolute;
+    top: -1.4%; 
+    height: 33%; 
+    width: 90%;
+    z-index: 11; 
+    display: none
 }
 
 /* Remove wow animation when collapsed menu is active */
