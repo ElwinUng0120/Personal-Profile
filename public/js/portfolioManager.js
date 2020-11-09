@@ -72,7 +72,7 @@ function buildColumns(){
     }
     for(let i=index+4; i<index+6; i++){
         if(sortedImgList[i] == null) {
-            $('..btn-group').prepend(`
+            $('.btn-group').prepend(`
             <p id="placeholderText" class="row d-flex justify-content-center">More Coming on the Way</p>
             `);
             return;
