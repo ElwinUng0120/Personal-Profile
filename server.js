@@ -1,6 +1,6 @@
 // importing express.js and Handlebars
 const express = require('express');
-const exphbs = require('express-handlebars');
+const fileSorter = require('./config/fileSorter.js');
 
 const PORT = process.env.PORT || 3000;
 
@@ -13,14 +13,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set Handlebars.
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
-
-// importing api routes
-var routes = require('./routes/api_routes.js');
-
-app.use(routes);
+app.get('/api/imageList', function(req, res){
+    const response = fileSorter.sortImgList();
+    res.send(response);
+});
 
 // starting server
 app.listen(PORT, function(){
