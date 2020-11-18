@@ -9,7 +9,7 @@ function Home(){
         <Navbar checker={true} />
         <HomeContainer />
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <Footer />
+        <Footer checker={true}/>
     </>
     );
 }

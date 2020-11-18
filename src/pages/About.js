@@ -9,8 +9,8 @@ function About(){
         <Navbar checker={false} />
         <br/>
         <AboutContainer />
-        <br/>
-        <Footer />
+        <br/><br/>
+        <Footer checker={false}/>
     </>
     );
 }

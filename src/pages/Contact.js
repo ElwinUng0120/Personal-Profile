@@ -9,7 +9,7 @@ function Contact(){
         <Navbar checker={false} />
         <ContactContainer />
         <br/>
-        <Footer />
+        <Footer checker={false}/>
     </>
     );
 }

@@ -22,7 +22,6 @@ body{
 /* footer styling */
 footer{
   /* To make the footer stick to the bottom of the window */
-  position: absolute;
   bottom: 0;
 
   /* Creating Copyright banner */
