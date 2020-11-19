@@ -1,12 +1,15 @@
 import React from 'react';
 
-function Project(){
+function Project(props){
+    const projObj = props.obj.slice(props.startInd, props.endInd);
     return (
     <>
-        <a href="https://github.com/ElwinUng0120/README-Generator" target="blank">
-            <img className="hoverZoom" src="http://placehold.it/500x300" alt="readme_generator.jpg" value="1"/>
-        </a>
-        <br/><br/>
+        {projObj.map(item => {
+            const link = './img/portfolio_thumbnails/' + item.name
+            return (<a href={item.link} target="blank">
+                <img className="hoverZoom" src={link} alt="readme_generator.jpg" value="1"/>
+            </a>);
+        })}
     </>
     );
 }

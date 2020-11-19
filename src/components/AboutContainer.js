@@ -11,7 +11,7 @@ function AboutContainer(){
                 <div className="row single-post no-gutters">
                     <div className="col">
                         <figure className="image-wrapper float-left pr-3">
-                            <img src="./aboutMe.jpg" alt="Profile pic" style={{height: '300px', width: '250px'}} />
+                            <img src="./img/aboutMe.jpg" alt="Profile pic" style={{height: '300px', width: '250px'}} />
                         </figure>
                         <article className="single-post-content-wrapper pr-3">
                             <p>Hi there!</p>
