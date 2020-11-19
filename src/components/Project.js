@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Project(props){
-    const projObj = props.obj.slice(props.startInd, props.endInd);
+    const projObj = props.opj.slice(props.index, props.index+3);
+    console.log(projObj);
     return (
     <>
         {projObj.map(item => {

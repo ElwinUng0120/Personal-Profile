@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }from 'react';
 import Project from '../components/Project';
 
 function PortfolioContainer(){
@@ -17,6 +17,16 @@ function PortfolioContainer(){
         {name: 'template_engine.jpg', link: 'https://github.com/ElwinUng0120/Template-Engine_Employee-Summary'},
         {name: 'weather_dashboard.jpg', link: 'https://github.com/ElwinUng0120/Weather-Dashboard'}
     ]
+
+    const [ind, setInd] = useState(0);
+
+    function handleBtnClicked(event){
+        event.preventDefault();
+        const value = event.target.value;
+        setInd(ind+value);
+        console.log(value);
+    }
+
     return (
     <main>
         <div className="container">
@@ -25,15 +35,15 @@ function PortfolioContainer(){
                 <hr className="my-4" style={{borderTop: '2px solid'}} />
                 <figure className="row" id="rowPort"> 
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <Project obj={projObj} startInd={0} endInd={3}/>
+                        <Project obj={projObj} index={ind} />
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12">
-                        <Project obj={projObj} startInd={3} endInd={6}/>
+                        <Project obj={projObj} index={ind+3} />
                     </div>
                 </figure>
                 <div className="btn-group" role="group" aria-label="Basic example" style={{float: 'right'}}>
-                    <button type="button" className="btn btn-secondary">Previous</button>
-                    <button type="button" className="btn btn-secondary">Next</button>
+                    <button type="button" className="btn btn-secondary" value={-3}>Previous</button>
+                    <button type="button" className="btn btn-secondary" value={3}>Next</button>
                 </div>
             </section>
         </div>
