@@ -6,10 +6,14 @@ function Project(props){
     return (
     <>
         {projObj.map(item => {
-            const link = './img/portfolio_thumbnails/' + item.name
-            return (<a href={item.link} target="blank">
-                <img className="hoverZoom" src={link} alt="readme_generator.jpg" value="1"/>
-            </a>);
+            // if(item != null){
+                const link = './img/portfolio_thumbnails/' + item.name
+                return (<a href={item.link} target="blank">
+                    <img className="hoverZoom" src={link} alt="readme_generator.jpg" value="1"/>
+                </a>);
+            // } else {
+            //     return <p>More Coming on the Way</p>
+            // }
         })}
     </>
     );
