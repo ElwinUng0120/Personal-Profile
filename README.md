@@ -1,6 +1,6 @@
 # Personal Profile with React
-This my personal profile website hosted on Github Pages: <br>
-It is based on the *WithDatabase* branch.
+This my personal profile website hosted on Github Pages: 
+It is based on the *WithDatabase branch.
 
 ## What's New?
 - The site was rebuilt using the **React** framework
