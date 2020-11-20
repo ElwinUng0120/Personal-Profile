@@ -22,7 +22,7 @@ function AboutContainer(){
                             </p>
                             <p>
                                 I'm currently taking a full-stack bootcamp hosted by University of Toronto and Trilogy. 
-                                Here is the <a href="https://bootcamp.learn.utoronto.ca/coding/" target="blank"><strong>link</strong></a> to the bootcamp's site if you want to see what I have been learning or check out my {<NavLink to="/portfolio"><strong>portfolio</strong></NavLink>} to see what I can actually do.
+                                Here is the <a href="https://bootcamp.learn.utoronto.ca/coding/" target="blank"><strong>link</strong></a> to the bootcamp's site if you want to see what I have been learning or check out my {<NavLink to="/Personal-Profile/portfolio"><strong>portfolio</strong></NavLink>} to see what I can actually do.
                             </p>
                         </article>
                     </div>
