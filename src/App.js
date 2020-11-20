@@ -9,11 +9,11 @@ function App() {
   return (
     <div>
       <Router>
-        <Route exact path='/' component={Home} />
-        <Route exact path="/home" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path='/Personal-Profile/' component={Home} />
+        <Route exact path="/Personal-Profile/home" component={Home} />
+        <Route exact path="/Personal-Profile/about" component={About} />
+        <Route exact path="/Personal-Profile/portfolio" component={Portfolio} />
+        <Route exact path="/Personal-Profile/contact" component={Contact} />
       </Router>
     </div>
   );

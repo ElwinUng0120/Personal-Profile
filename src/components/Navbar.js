@@ -18,22 +18,22 @@ function Navbar(props){
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto" style={{marginRight:'1.25%'}}>
                 <li className="nav-item">
-                    <NavLink to="/home" className={location.pathname === "/home" ? "nav-link active" : "nav-link"}>
+                    <NavLink to="/Personal-Profile/home" className={location.pathname === "/Personal-Profile/home" ? "nav-link active" : "nav-link"}>
                         <h4>Home</h4>
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/about" className={location.pathname === "/about" ? "nav-link active" : "nav-link"}>
+                    <NavLink to="/Personal-Profile/about" className={location.pathname === "/Personal-Profile/about" ? "nav-link active" : "nav-link"}>
                         <h4>About me</h4>
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/portfolio" className={location.pathname === "/portfolio" ? "nav-link active" : "nav-link"}>
+                    <NavLink to="/Personal-Profile/portfolio" className={location.pathname === "/Personal-Profile/portfolio" ? "nav-link active" : "nav-link"}>
                         <h4>Portfolio</h4>
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}>
+                    <NavLink to="/Personal-Profile/contact" className={location.pathname === "/Personal-Profile/contact" ? "nav-link active" : "nav-link"}>
                         <h4>Contact me</h4>
                     </NavLink>
                 </li>
